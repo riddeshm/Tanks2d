@@ -21,12 +21,13 @@ public class Projectile : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void CalculatePower()
+    public float CalculatePower()
     {
         if(power < powerLimit)
         {
             power += powerMultiplier;
         }
+        return power;
     }
 
     public void Shoot(Vector3 initialPosition, Vector3 direction)
