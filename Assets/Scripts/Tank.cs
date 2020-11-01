@@ -6,6 +6,8 @@ public class Tank : MonoBehaviour
 {
     public GameObject turrent, projectileSpawn;
 
+    public float health = 100f;
+
     float speed = 5f;
     float rotationSpeed = 40f;
     float turrentRotationLimit = 90f;
@@ -42,5 +44,16 @@ public class Tank : MonoBehaviour
     public Vector3 FireDirection()
     {
         return projectileSpawn.transform.position - turrent.transform.position;
+    }
+
+    public float TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            health = 0;
+            Destroy(gameObject);
+        }
+        return health;
     }
 }

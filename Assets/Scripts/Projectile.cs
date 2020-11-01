@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public Action OnCollision;
+    public Action<GameObject> OnCollision;
+    public float playerDamage = 10f;
 
     Rigidbody2D rb;
     float powerMultiplier = 2f;
@@ -39,7 +40,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        OnCollision?.Invoke();
+        OnCollision?.Invoke(collision.gameObject);
         gameObject.SetActive(false);
         if (collision.gameObject.CompareTag("Ground"))
         {

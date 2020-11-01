@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1722807814}
   m_Layer: 0
   m_Name: Tank
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turrent: {fileID: 656139139656797372}
   projectileSpawn: {fileID: 3708046508237715309}
+  health: 100
 --- !u!61 &6716096030949208249
 BoxCollider2D:
   m_ObjectHideFlags: 0
