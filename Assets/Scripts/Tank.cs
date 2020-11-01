@@ -7,13 +7,14 @@ public class Tank : MonoBehaviour
     public GameObject turrent, projectileSpawn;
 
     float speed = 5f;
-    float rotationSpeed = 20f;
-    float turrentRotationLimit = 45f;
+    float rotationSpeed = 40f;
+    float turrentRotationLimit = 90f;
     float turrentRotLimitQtn;
 
 
     private void Awake()
     {
+        //Added 0.1f to avoid reaching min/max value
         turrentRotLimitQtn = Quaternion.Euler(0f, 0f, turrentRotationLimit + 0.1f).z;
     }
 
