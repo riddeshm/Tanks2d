@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 1193742720}
   - component: {fileID: 1193742719}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 1338354879}
   - component: {fileID: 1338354878}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PowerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpText: {fileID: 3330833139345070919, guid: 654b4ca9b306a44f0b8c16574fbd56b9, type: 3}
   canvasObj: {fileID: 1100815757}
+  powerTxt: {fileID: 1338354878}
 --- !u!1 &1608982548
 GameObject:
   m_ObjectHideFlags: 0
